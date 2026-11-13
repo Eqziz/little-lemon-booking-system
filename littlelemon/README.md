@@ -1,6 +1,7 @@
 # Little Lemon Booking System - Meta Full Stack Developer Capstone
 
-Author: Mukhammedov Nodir Shavkatovich
+Author: Mukhammedov Nodir Shavkatovich  
+GitHub Repository: https://github.com/Eqziz/little-lemon-booking-system  
 
 ## Overview
 This repository contains the complete solution for the Meta Back-End Developer course: "The Full Stack" final assessment.

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav-container">
+      <h1 class="logo">Web Technologies 2</h1>
+      <nav class="nav">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/users" class="nav-link active">Users (MVC)</a>
+        <a href="/users/new" class="nav-link btn-link">+ Add User</a>
+        <a href="/api/users" target="_blank" class="nav-link api-link">JSON API</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <div class="page-header">
+      <h2><%= title %></h2>
+      <a href="/users/new" class="btn btn-primary">+ Add New User</a>
+    </div>
+
+    <div class="table-container">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Email</th>
+            <th>Created At</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% if (users && users.length > 0) { %>
+            <% users.forEach(user => { %>
+              <tr>
+                <td><span class="badge">#<%= user.id %></span></td>
+                <td><strong><%= user.name %></strong></td>
+                <td><span class="tag"><%= user.role %></span></td>
+                <td><%= user.email %></td>
+                <td><%= new Date(user.createdAt).toLocaleDateString() %></td>
+              </tr>
+            <% }) %>
+          <% } else { %>
+            <tr>
+              <td colspan="5" class="empty-msg">No users registered yet.</td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Astana IT University - Web Technologies 2 (Back End)</p>
+    </div>
+  </footer>
+</body>
+</html>

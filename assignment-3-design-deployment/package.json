@@ -1,0 +1,15 @@
+{
+  "name": "assignment-3-design-and-deployment",
+  "version": "1.0.0",
+  "description": "Assignment 3: Design and Deployment - Database CRUD, Data Modeling & Docker/Cloud Deployment",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0",
+    "dotenv": "^16.4.5"
+  }
+}

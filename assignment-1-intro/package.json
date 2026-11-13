@@ -1,0 +1,14 @@
+{
+  "name": "assignment-1-intro-to-web-technologies",
+  "version": "1.0.0",
+  "description": "Assignment 1: Introduction to Web Technologies (Back End) - Express.js MVC",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ejs": "^3.1.10"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "assignment-2-intermediate-backend",
+  "version": "1.0.0",
+  "description": "Assignment 2: Intermediate to Web Technologies - Express Middleware & External API Integration",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

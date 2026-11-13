@@ -1,0 +1,19 @@
+{
+  "name": "assignment-4-secure-api",
+  "version": "1.0.0",
+  "description": "Assignment 4: Secure and Interactive Exploration - JWT Authentication, RBAC, Multer Uploads & OWASP Security",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.3.1",
+    "dotenv": "^16.4.5"
+  }
+}
